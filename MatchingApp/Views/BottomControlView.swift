@@ -8,23 +8,20 @@
 import UIKit
 class BottomControlView: UIView {
 
-    let view1 = BottomButtonView(frame: .zero, width: 50,imageName: "reload")
-    let view2 = BottomButtonView(frame: .zero, width: 60,imageName: "nope")
-    let view3 = BottomButtonView(frame: .zero, width: 50,imageName: "star")
-    let view4 = BottomButtonView(frame: .zero, width: 60,imageName: "heart")
-    let view5 = BottomButtonView(frame: .zero, width: 50,imageName: "thunder")
+    let reloadView = BottomButtonView(frame: .zero, width: 50,imageName: "reload")
+    let nopeView = BottomButtonView(frame: .zero, width: 60,imageName: "nope")
+    let starView = BottomButtonView(frame: .zero, width: 50,imageName: "star")
+    let heartView = BottomButtonView(frame: .zero, width: 60,imageName: "heart")
+    let thunderView = BottomButtonView(frame: .zero, width: 50,imageName: "thunder")
 
     override init(frame:CGRect){
         super.init(frame:frame)
-                
-        let baseStackView = UIStackView(arrangedSubviews: [view1,view2,view3,view4,view4,view5])
+        let baseStackView = UIStackView(arrangedSubviews: [reloadView,nopeView,starView,heartView,heartView,thunderView])
         baseStackView.axis = .horizontal //横
         baseStackView.distribution   = .fillEqually
         baseStackView.spacing = 10
         baseStackView.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(baseStackView)
-        
-        
+        addSubview(baseStackView)                
         [
             baseStackView.topAnchor.constraint(equalTo: topAnchor),
             baseStackView.bottomAnchor.constraint(equalTo:bottomAnchor),
