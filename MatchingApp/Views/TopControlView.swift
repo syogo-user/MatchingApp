@@ -41,13 +41,7 @@ class TopControlView:UIView{
         
         addSubview(baseStackView)
                 
-        [
-            baseStackView.topAnchor.constraint(equalTo: topAnchor),
-            baseStackView.bottomAnchor.constraint(equalTo:bottomAnchor),
-            baseStackView.leftAnchor.constraint(equalTo: leftAnchor,constant:40),
-            baseStackView.rightAnchor.constraint(equalTo: rightAnchor ,constant: -40),
-
-        ].forEach {$0.isActive = true}
+        baseStackView.anchor(top:topAnchor,bottom: bottomAnchor,left: leftAnchor,right: rightAnchor,leftPdding: 40,rightPdding: 40)
         
         tinderButton.isSelected = true
     }
@@ -55,37 +49,32 @@ class TopControlView:UIView{
     private func setupBindings(){
         //Rx
         tinderButton.rx.tap
-            .subscribe {_ in
-                //tinderボタンをタップしたときに流れてくる
-                print(#function)
+            .asDriver()
+            .drive(onNext: { [weak self] _  in
+                guard let self = self else{return}
                 self.handleSelectedButton(selectedButton: self.tinderButton)
-            }
-            .disposed(by: disposeBag)
+            }).disposed(by:disposeBag)
         
         goodButton.rx.tap
-            .subscribe {_ in
-                //goodButtonボタンをタップしたときに流れてくる
-                print(#function)
+            .asDriver()
+            .drive(onNext: { [weak self] _  in
+                guard let self = self else{return}
                 self.handleSelectedButton(selectedButton: self.goodButton)
-            }
-            .disposed(by: disposeBag)
+            }).disposed(by:disposeBag)
         
         commentButton.rx.tap
-            .subscribe {_ in
-                //commentButtonボタンをタップしたときに流れてくる
-                print(#function)
+            .asDriver()
+            .drive(onNext: { [weak self] _  in
+                guard let self = self else{return}
                 self.handleSelectedButton(selectedButton: self.commentButton)
-            }
-            .disposed(by: disposeBag)
+            }).disposed(by:disposeBag)
         
         profileButton.rx.tap
-            .subscribe {_ in
-                //profileButtonボタンをタップしたときに流れてくる
-                print(#function)
+            .asDriver()
+            .drive(onNext: { [weak self] _  in
+                guard let self = self else{return}
                 self.handleSelectedButton(selectedButton: self.profileButton)
-            }
-            .disposed(by: disposeBag)
-
+            }).disposed(by:disposeBag)
     }
     private func handleSelectedButton(selectedButton:UIButton){
         //引数のselectedButtonはタップされたボタン(タップされたときのこのメソッドを呼ぶようにしているから)

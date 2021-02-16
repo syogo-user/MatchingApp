@@ -19,6 +19,7 @@
 		91BC6CDF25DAAD5400C679B0 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 91BC6CDE25DAAD5400C679B0 /* RxSwift */; };
 		91BC6CE125DAAD5400C679B0 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 91BC6CE025DAAD5400C679B0 /* RxCocoa */; };
 		91BC6CE325DAAD5400C679B0 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 91BC6CE225DAAD5400C679B0 /* RxRelay */; };
+		91BC6CE825DBFF5600C679B0 /* UIView-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BC6CE725DBFF5600C679B0 /* UIView-Extention.swift */; };
 		91FCC40A25DA862800376F8C /* BottomControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FCC40925DA862800376F8C /* BottomControlView.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		912F117A25D9545C003432FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9133E11F25DA94C900E39AE0 /* UIImage-Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage-Extention.swift"; sourceTree = "<group>"; };
 		91BC6CD825DAA69E00C679B0 /* TopControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopControlView.swift; sourceTree = "<group>"; };
+		91BC6CE725DBFF5600C679B0 /* UIView-Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Extention.swift"; sourceTree = "<group>"; };
 		91FCC40925DA862800376F8C /* BottomControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomControlView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				9133E11F25DA94C900E39AE0 /* UIImage-Extention.swift */,
+				91BC6CE725DBFF5600C679B0 /* UIView-Extention.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91BC6CE825DBFF5600C679B0 /* UIView-Extention.swift in Sources */,
 				91BC6CD925DAA69E00C679B0 /* TopControlView.swift in Sources */,
 				912F115B25D9545A003432FE /* HomeViewController.swift in Sources */,
 				912F115725D9545A003432FE /* AppDelegate.swift in Sources */,
