@@ -22,6 +22,7 @@
 		91BC6CE825DBFF5600C679B0 /* UIView-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BC6CE725DBFF5600C679B0 /* UIView-Extention.swift */; };
 		91BC6CED25DC0D6800C679B0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BC6CEC25DC0D6800C679B0 /* CardView.swift */; };
 		91FCC40A25DA862800376F8C /* BottomControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FCC40925DA862800376F8C /* BottomControlView.swift */; };
+		91FF9E3A25DCDA6800AD69FE /* UIColor-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FF9E3925DCDA6800AD69FE /* UIColor-Extention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		91BC6CE725DBFF5600C679B0 /* UIView-Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Extention.swift"; sourceTree = "<group>"; };
 		91BC6CEC25DC0D6800C679B0 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		91FCC40925DA862800376F8C /* BottomControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomControlView.swift; sourceTree = "<group>"; };
+		91FF9E3925DCDA6800AD69FE /* UIColor-Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extention.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			children = (
 				9133E11F25DA94C900E39AE0 /* UIImage-Extention.swift */,
 				91BC6CE725DBFF5600C679B0 /* UIView-Extention.swift */,
+				91FF9E3925DCDA6800AD69FE /* UIColor-Extention.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				91BC6CD925DAA69E00C679B0 /* TopControlView.swift in Sources */,
 				912F115B25D9545A003432FE /* HomeViewController.swift in Sources */,
 				912F115725D9545A003432FE /* AppDelegate.swift in Sources */,
+				91FF9E3A25DCDA6800AD69FE /* UIColor-Extention.swift in Sources */,
 				9133E12025DA94C900E39AE0 /* UIImage-Extention.swift in Sources */,
 				912F115925D9545A003432FE /* SceneDelegate.swift in Sources */,
 				91BC6CED25DC0D6800C679B0 /* CardView.swift in Sources */,
