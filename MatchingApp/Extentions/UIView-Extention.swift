@@ -20,6 +20,9 @@ extension UIView{
         bottomPdding:CGFloat = 0,
         leftPdding:CGFloat = 0,
         rightPdding:CGFloat = 0){
+        
+        self.translatesAutoresizingMaskIntoConstraints = false
+        
         //topのデフォルト値をnilにする 　topPaddingのでデフォルト値を0にする
         if let top = top {
             //UIViewのtopと引数で受け取ったtopで距離をtopPaddingで設定
