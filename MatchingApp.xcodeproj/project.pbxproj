@@ -22,6 +22,7 @@
 		91BC6CE325DAAD5400C679B0 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 91BC6CE225DAAD5400C679B0 /* RxRelay */; };
 		91BC6CE825DBFF5600C679B0 /* UIView-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BC6CE725DBFF5600C679B0 /* UIView-Extention.swift */; };
 		91BC6CED25DC0D6800C679B0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BC6CEC25DC0D6800C679B0 /* CardView.swift */; };
+		91F21B5025E1F2B200F0AF4A /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F21B4F25E1F2B200F0AF4A /* RegisterViewModel.swift */; };
 		91FCC40A25DA862800376F8C /* BottomControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FCC40925DA862800376F8C /* BottomControlView.swift */; };
 		91FF9E3A25DCDA6800AD69FE /* UIColor-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FF9E3925DCDA6800AD69FE /* UIColor-Extention.swift */; };
 		91FF9E3F25DD1F3700AD69FE /* CardInfoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FF9E3E25DD1F3700AD69FE /* CardInfoLabel.swift */; };
@@ -30,6 +31,8 @@
 		91FF9E5525DD460300AD69FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91FF9E5425DD460300AD69FE /* GoogleService-Info.plist */; };
 		91FF9E6A25DD486600AD69FE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FF9E6925DD486600AD69FE /* RegisterViewController.swift */; };
 		91FF9E7125DD4C6700AD69FE /* RegisterTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FF9E7025DD4C6700AD69FE /* RegisterTextField.swift */; };
+		91FF9E7925DD616400AD69FE /* RegisterTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FF9E7825DD616400AD69FE /* RegisterTitleLabel.swift */; };
+		91FF9E7E25DD63E600AD69FE /* RegisterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FF9E7D25DD63E600AD69FE /* RegisterButton.swift */; };
 		9695226382EFC38695A26776 /* Pods_MatchingAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42756F844C3D82DC3BCC8997 /* Pods_MatchingAppTests.framework */; };
 		A26C6105018027270D49189D /* Pods_MatchingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD112977B0EA235C1D280ABE /* Pods_MatchingApp.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +76,7 @@
 		91BC6CD825DAA69E00C679B0 /* TopControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopControlView.swift; sourceTree = "<group>"; };
 		91BC6CE725DBFF5600C679B0 /* UIView-Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Extention.swift"; sourceTree = "<group>"; };
 		91BC6CEC25DC0D6800C679B0 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		91F21B4F25E1F2B200F0AF4A /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		91FCC40925DA862800376F8C /* BottomControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomControlView.swift; sourceTree = "<group>"; };
 		91FF9E3925DCDA6800AD69FE /* UIColor-Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extention.swift"; sourceTree = "<group>"; };
 		91FF9E3E25DD1F3700AD69FE /* CardInfoLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfoLabel.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 		91FF9E5425DD460300AD69FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		91FF9E6925DD486600AD69FE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		91FF9E7025DD4C6700AD69FE /* RegisterTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTextField.swift; sourceTree = "<group>"; };
+		91FF9E7825DD616400AD69FE /* RegisterTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTitleLabel.swift; sourceTree = "<group>"; };
+		91FF9E7D25DD63E600AD69FE /* RegisterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterButton.swift; sourceTree = "<group>"; };
 		ADD87B29FCD3A6267CCD3BDE /* Pods-MatchingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatchingApp.release.xcconfig"; path = "Target Support Files/Pods-MatchingApp/Pods-MatchingApp.release.xcconfig"; sourceTree = "<group>"; };
 		C2920AF6AE76F8663B03EEBF /* Pods-MatchingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatchingApp.debug.xcconfig"; path = "Target Support Files/Pods-MatchingApp/Pods-MatchingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E6ABC66429BCF87D21D36859 /* Pods_MatchingApp_MatchingAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MatchingApp_MatchingAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +163,7 @@
 		912F115525D9545A003432FE /* MatchingApp */ = {
 			isa = PBXGroup;
 			children = (
+				91F21B4E25E1F2A100F0AF4A /* ViewModel */,
 				9133E12425DA94D400E39AE0 /* Extentions */,
 				91FCC40825DA85FF00376F8C /* Views */,
 				91FCC40425DA85CF00376F8C /* ViewControllers */,
@@ -199,6 +206,14 @@
 			path = Extentions;
 			sourceTree = "<group>";
 		};
+		91F21B4E25E1F2A100F0AF4A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				91F21B4F25E1F2B200F0AF4A /* RegisterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		91FCC40425DA85CF00376F8C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +248,8 @@
 			isa = PBXGroup;
 			children = (
 				91FF9E7025DD4C6700AD69FE /* RegisterTextField.swift */,
+				91FF9E7825DD616400AD69FE /* RegisterTitleLabel.swift */,
+				91FF9E7D25DD63E600AD69FE /* RegisterButton.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -493,13 +510,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91FF9E7E25DD63E600AD69FE /* RegisterButton.swift in Sources */,
 				91BC6CE825DBFF5600C679B0 /* UIView-Extention.swift in Sources */,
 				91BC6CD925DAA69E00C679B0 /* TopControlView.swift in Sources */,
+				91FF9E7925DD616400AD69FE /* RegisterTitleLabel.swift in Sources */,
 				91FF9E3F25DD1F3700AD69FE /* CardInfoLabel.swift in Sources */,
 				91FF9E4825DD258D00AD69FE /* UIButton-Extention.swift in Sources */,
 				912F115B25D9545A003432FE /* HomeViewController.swift in Sources */,
 				912F115725D9545A003432FE /* AppDelegate.swift in Sources */,
 				91FF9E3A25DCDA6800AD69FE /* UIColor-Extention.swift in Sources */,
+				91F21B5025E1F2B200F0AF4A /* RegisterViewModel.swift in Sources */,
 				9133E12025DA94C900E39AE0 /* UIImage-Extention.swift in Sources */,
 				912F115925D9545A003432FE /* SceneDelegate.swift in Sources */,
 				91BC6CED25DC0D6800C679B0 /* CardView.swift in Sources */,

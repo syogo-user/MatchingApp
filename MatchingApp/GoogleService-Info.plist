@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>731268347772-gc20eintp95f63f9v1ohrseqq94oufh8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.731268347772-gc20eintp95f63f9v1ohrseqq94oufh8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBR7FDMHLGM55GQrngyWo8N1eh_8u2IOGo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>731268347772</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>s.photo.trumpet.005.Matchingapp.MatchingApp</string>
+	<key>PROJECT_ID</key>
+	<string>matchingapp-7ac52</string>
+	<key>STORAGE_BUCKET</key>
+	<string>matchingapp-7ac52.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:731268347772:ios:64702542217fa07e60d6f9</string>
+</dict>
+</plist>
