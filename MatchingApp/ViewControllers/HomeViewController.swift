@@ -11,6 +11,17 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupLayout()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            //レイアウトのセットアップが完了する前に呼ばれると困るので0.5秒後に遷移するように
+            let registerController = RegisterViewController()
+            registerController.modalPresentationStyle = .fullScreen
+            self.present(registerController, animated: true)
+        }
+
+        
+    }
+    private func setupLayout(){
         view.backgroundColor = .white
         let topControlView = TopControlView()
         let cardView = CardView()
@@ -28,7 +39,7 @@ class HomeViewController: UIViewController {
             stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             stackView.leftAnchor.constraint(equalTo: view.leftAnchor),
             stackView.rightAnchor.constraint(equalTo: view.rightAnchor)].forEach {$0.isActive = true}
-        
+     
     }
 
 

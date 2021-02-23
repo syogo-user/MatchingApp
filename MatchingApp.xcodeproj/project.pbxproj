@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		75ABDF45E93D0E6EB351295C /* Pods_MatchingApp_MatchingAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6ABC66429BCF87D21D36859 /* Pods_MatchingApp_MatchingAppUITests.framework */; };
+		91035C8425E500D7008F183C /* Firebase-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91035C8325E500D7008F183C /* Firebase-Extention.swift */; };
 		912F115725D9545A003432FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912F115625D9545A003432FE /* AppDelegate.swift */; };
 		912F115925D9545A003432FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912F115825D9545A003432FE /* SceneDelegate.swift */; };
 		912F115B25D9545A003432FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912F115A25D9545A003432FE /* HomeViewController.swift */; };
@@ -59,6 +60,7 @@
 		42756F844C3D82DC3BCC8997 /* Pods_MatchingAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MatchingAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD88D0E016A4F46A682016B /* Pods-MatchingApp-MatchingAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatchingApp-MatchingAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MatchingApp-MatchingAppUITests/Pods-MatchingApp-MatchingAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7A99726E3498A58538154364 /* Pods-MatchingAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatchingAppTests.release.xcconfig"; path = "Target Support Files/Pods-MatchingAppTests/Pods-MatchingAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		91035C8325E500D7008F183C /* Firebase-Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase-Extention.swift"; sourceTree = "<group>"; };
 		912F115325D9545A003432FE /* MatchingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		912F115625D9545A003432FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		912F115825D9545A003432FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				91BC6CE725DBFF5600C679B0 /* UIView-Extention.swift */,
 				91FF9E3925DCDA6800AD69FE /* UIColor-Extention.swift */,
 				91FF9E4725DD258D00AD69FE /* UIButton-Extention.swift */,
+				91035C8325E500D7008F183C /* Firebase-Extention.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -523,6 +526,7 @@
 				9133E12025DA94C900E39AE0 /* UIImage-Extention.swift in Sources */,
 				912F115925D9545A003432FE /* SceneDelegate.swift in Sources */,
 				91BC6CED25DC0D6800C679B0 /* CardView.swift in Sources */,
+				91035C8425E500D7008F183C /* Firebase-Extention.swift in Sources */,
 				91FF9E7125DD4C6700AD69FE /* RegisterTextField.swift in Sources */,
 				91FF9E6A25DD486600AD69FE /* RegisterViewController.swift in Sources */,
 				91FF9E5025DD26FF00AD69FE /* CardImageView.swift in Sources */,

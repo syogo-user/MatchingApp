@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //最初の画面を表示
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = RegisterViewController()
+        window?.rootViewController = HomeViewController()
         return true
     }
 
