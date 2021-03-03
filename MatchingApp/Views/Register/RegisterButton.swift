@@ -14,9 +14,9 @@ class RegisterButton: UIButton {
             self.backgroundColor = isHighlighted ? .rgb(red: 227, green: 48, blue: 78,alpha:0.2) :.rgb(red: 227, green: 48, blue: 78)
         }
     }
-    init() {
+    init(text:String) {
         super.init(frame: .zero)
-        setTitle("登録", for: .normal)
+        setTitle(text, for: .normal)
         backgroundColor = .rgb(red: 227, green: 48, blue: 78)
         setTitleColor(.white , for: .normal)
         layer.cornerRadius = 10

@@ -17,6 +17,7 @@
 		912F116E25D9545C003432FE /* MatchingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912F116D25D9545C003432FE /* MatchingAppTests.swift */; };
 		912F117925D9545C003432FE /* MatchingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912F117825D9545C003432FE /* MatchingAppUITests.swift */; };
 		9133E12025DA94C900E39AE0 /* UIImage-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9133E11F25DA94C900E39AE0 /* UIImage-Extention.swift */; };
+		9179CDDF25EFBCFC00396D3B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179CDDE25EFBCFC00396D3B /* LoginViewController.swift */; };
 		91BC6CD925DAA69E00C679B0 /* TopControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BC6CD825DAA69E00C679B0 /* TopControlView.swift */; };
 		91BC6CDF25DAAD5400C679B0 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 91BC6CDE25DAAD5400C679B0 /* RxSwift */; };
 		91BC6CE125DAAD5400C679B0 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 91BC6CE025DAAD5400C679B0 /* RxCocoa */; };
@@ -75,6 +76,7 @@
 		912F117825D9545C003432FE /* MatchingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingAppUITests.swift; sourceTree = "<group>"; };
 		912F117A25D9545C003432FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9133E11F25DA94C900E39AE0 /* UIImage-Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage-Extention.swift"; sourceTree = "<group>"; };
+		9179CDDE25EFBCFC00396D3B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		91BC6CD825DAA69E00C679B0 /* TopControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopControlView.swift; sourceTree = "<group>"; };
 		91BC6CE725DBFF5600C679B0 /* UIView-Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Extention.swift"; sourceTree = "<group>"; };
 		91BC6CEC25DC0D6800C679B0 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 			children = (
 				912F115A25D9545A003432FE /* HomeViewController.swift */,
 				91FF9E6925DD486600AD69FE /* RegisterViewController.swift */,
+				9179CDDE25EFBCFC00396D3B /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 				91BC6CE825DBFF5600C679B0 /* UIView-Extention.swift in Sources */,
 				91BC6CD925DAA69E00C679B0 /* TopControlView.swift in Sources */,
 				91FF9E7925DD616400AD69FE /* RegisterTitleLabel.swift in Sources */,
+				9179CDDF25EFBCFC00396D3B /* LoginViewController.swift in Sources */,
 				91FF9E3F25DD1F3700AD69FE /* CardInfoLabel.swift in Sources */,
 				91FF9E4825DD258D00AD69FE /* UIButton-Extention.swift in Sources */,
 				912F115B25D9545A003432FE /* HomeViewController.swift in Sources */,
