@@ -8,9 +8,16 @@
 import UIKit
 import FirebaseAuth
 import FirebaseFirestore
+import PKHUD
 class HomeViewController: UIViewController {
 
     private var user:User?
+    //自分以外のユーザ情報
+    private var users = [User]()
+    
+    let topControlView = TopControlView()
+    let cardView = UIView()
+    let bottomControlView = BottomControlView()
     
     let logoutButton:UIButton = {
         let button = UIButton(type:.system)
@@ -25,14 +32,15 @@ class HomeViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         guard let uid  = Auth.auth().currentUser?.uid else{return}
-//        Firestore.fetchUserFromFirestore(uid: uid)
+        
         Firestore.fetchUserFromFirestore(uid: uid) { (user) in
             if let user = user {
                 self.user = user
             }
         }
+        fetchUsers()
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -45,13 +53,23 @@ class HomeViewController: UIViewController {
             self.present(nav, animated: true)
         }        
     }
-    
+    private func fetchUsers(){
+        HUD.show(.progress)
+        Firestore.fetchUsers { (users) in
+            HUD.hide()
+            self.users = users
+            self.users.forEach { (user) in
+                let card = CardView(user: user)
+                self.cardView.addSubview(card)
+                card.anchor(top:self.cardView.topAnchor,bottom: self.cardView.bottomAnchor,left: self.cardView.leftAnchor,right: self.cardView.rightAnchor)
+            }
+            print("ユーザ情報の取得に成功:",self.users)
+        }
+    }
     
     private func setupLayout(){
         view.backgroundColor = .white
-        let topControlView = TopControlView()
-        let cardView = CardView()
-        let bottomControlView = BottomControlView()
+
         let stackView  = UIStackView(arrangedSubviews: [topControlView,cardView,bottomControlView])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical //縦
