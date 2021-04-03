@@ -11,7 +11,7 @@ import UIKit
 import RxSwift
 import FirebaseAuth
 import FirebaseFirestore
-
+import PKHUD
 class RegisterViewController :UIViewController{
 
     private let disposeBag = DisposeBag()
@@ -143,7 +143,10 @@ class RegisterViewController :UIViewController{
         let email = emailTextField.text
         let password = passwordTextField.text
         let name = nameTextField.text
+        HUD.show(.progress)
+        
         Auth.createUserToFireAuth(email: email, password: password, name: name) { success in
+            HUD.hide()
             //firebaseに登録後に呼ばれる
             if success{
                 print("処理が完了")

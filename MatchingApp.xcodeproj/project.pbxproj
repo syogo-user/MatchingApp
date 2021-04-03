@@ -17,6 +17,8 @@
 		912F116E25D9545C003432FE /* MatchingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912F116D25D9545C003432FE /* MatchingAppTests.swift */; };
 		912F117925D9545C003432FE /* MatchingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912F117825D9545C003432FE /* MatchingAppUITests.swift */; };
 		9133E12025DA94C900E39AE0 /* UIImage-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9133E11F25DA94C900E39AE0 /* UIImage-Extention.swift */; };
+		9176F52626188B3F00F6FA23 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 9176F52526188B3F00F6FA23 /* PKHUD */; };
+		9176F52C261895C300F6FA23 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9176F52B261895C300F6FA23 /* User.swift */; };
 		9179CDDF25EFBCFC00396D3B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179CDDE25EFBCFC00396D3B /* LoginViewController.swift */; };
 		91BC6CD925DAA69E00C679B0 /* TopControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BC6CD825DAA69E00C679B0 /* TopControlView.swift */; };
 		91BC6CDF25DAAD5400C679B0 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 91BC6CDE25DAAD5400C679B0 /* RxSwift */; };
@@ -76,6 +78,7 @@
 		912F117825D9545C003432FE /* MatchingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingAppUITests.swift; sourceTree = "<group>"; };
 		912F117A25D9545C003432FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9133E11F25DA94C900E39AE0 /* UIImage-Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage-Extention.swift"; sourceTree = "<group>"; };
+		9176F52B261895C300F6FA23 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9179CDDE25EFBCFC00396D3B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		91BC6CD825DAA69E00C679B0 /* TopControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopControlView.swift; sourceTree = "<group>"; };
 		91BC6CE725DBFF5600C679B0 /* UIView-Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Extention.swift"; sourceTree = "<group>"; };
@@ -106,6 +109,7 @@
 				91BC6CE325DAAD5400C679B0 /* RxRelay in Frameworks */,
 				91BC6CE125DAAD5400C679B0 /* RxCocoa in Frameworks */,
 				91BC6CDF25DAAD5400C679B0 /* RxSwift in Frameworks */,
+				9176F52626188B3F00F6FA23 /* PKHUD in Frameworks */,
 				A26C6105018027270D49189D /* Pods_MatchingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,6 +171,7 @@
 		912F115525D9545A003432FE /* MatchingApp */ = {
 			isa = PBXGroup;
 			children = (
+				9176F52A261895B900F6FA23 /* Models */,
 				91F21B4E25E1F2A100F0AF4A /* ViewModel */,
 				9133E12425DA94D400E39AE0 /* Extentions */,
 				91FCC40825DA85FF00376F8C /* Views */,
@@ -209,6 +214,14 @@
 				91035C8325E500D7008F183C /* Firebase-Extention.swift */,
 			);
 			path = Extentions;
+			sourceTree = "<group>";
+		};
+		9176F52A261895B900F6FA23 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9176F52B261895C300F6FA23 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		91F21B4E25E1F2A100F0AF4A /* ViewModel */ = {
@@ -292,6 +305,7 @@
 				91BC6CDE25DAAD5400C679B0 /* RxSwift */,
 				91BC6CE025DAAD5400C679B0 /* RxCocoa */,
 				91BC6CE225DAAD5400C679B0 /* RxRelay */,
+				9176F52526188B3F00F6FA23 /* PKHUD */,
 			);
 			productName = MatchingApp;
 			productReference = 912F115325D9545A003432FE /* MatchingApp.app */;
@@ -369,6 +383,7 @@
 			mainGroup = 912F114A25D9545A003432FE;
 			packageReferences = (
 				91BC6CDD25DAAD5400C679B0 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				9176F52426188B3F00F6FA23 /* XCRemoteSwiftPackageReference "PKHUD" */,
 			);
 			productRefGroup = 912F115425D9545A003432FE /* Products */;
 			projectDirPath = "";
@@ -524,6 +539,7 @@
 				91FF9E3F25DD1F3700AD69FE /* CardInfoLabel.swift in Sources */,
 				91FF9E4825DD258D00AD69FE /* UIButton-Extention.swift in Sources */,
 				912F115B25D9545A003432FE /* HomeViewController.swift in Sources */,
+				9176F52C261895C300F6FA23 /* User.swift in Sources */,
 				912F115725D9545A003432FE /* AppDelegate.swift in Sources */,
 				91FF9E3A25DCDA6800AD69FE /* UIColor-Extention.swift in Sources */,
 				91F21B5025E1F2B200F0AF4A /* RegisterViewModel.swift in Sources */,
@@ -867,6 +883,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9176F52426188B3F00F6FA23 /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
 		91BC6CDD25DAAD5400C679B0 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
@@ -878,6 +902,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9176F52526188B3F00F6FA23 /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9176F52426188B3F00F6FA23 /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
 		91BC6CDE25DAAD5400C679B0 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 91BC6CDD25DAAD5400C679B0 /* XCRemoteSwiftPackageReference "RxSwift" */;

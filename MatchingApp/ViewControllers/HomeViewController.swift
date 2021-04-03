@@ -7,16 +7,32 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseFirestore
 class HomeViewController: UIViewController {
+
+    private var user:User?
     
     let logoutButton:UIButton = {
         let button = UIButton(type:.system)
         button.setTitle("ログアウト", for: .normal)
         return button
     }()
+    
+    //MARK:LifeCycle Method
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        guard let uid  = Auth.auth().currentUser?.uid else{return}
+//        Firestore.fetchUserFromFirestore(uid: uid)
+        Firestore.fetchUserFromFirestore(uid: uid) { (user) in
+            if let user = user {
+                self.user = user
+            }
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -8,6 +8,7 @@
 import UIKit
 import RxSwift
 import FirebaseAuth
+import PKHUD
 class LoginViewContrller :UIViewController{
     
     private let disposeBag = DisposeBag()
@@ -69,15 +70,15 @@ class LoginViewContrller :UIViewController{
     private func loginWithFireAuth(){
         let email = emailTextField.text ?? ""
         let password = passwordTextField.text ?? ""
+        HUD.show(.progress)
         
-        Auth.auth().signIn(withEmail: email, password: password) { (res, err) in
-            if let err = err{
-                print("ログインに失敗",err)
-                return
+        Auth.loginWithFireAuth(email: email, password: password) { (success) in
+            HUD.hide()
+            if success{
+                self.dismiss(animated: true)
+            }else{
+                
             }
-            
-            print("ログインに成功")
-            self.dismiss(animated: true, completion: nil)
         }
     }
 }
