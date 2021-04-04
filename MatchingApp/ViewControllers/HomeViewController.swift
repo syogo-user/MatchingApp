@@ -9,11 +9,14 @@ import UIKit
 import FirebaseAuth
 import FirebaseFirestore
 import PKHUD
+import RxCocoa
+import RxSwift
 class HomeViewController: UIViewController {
 
     private var user:User?
     //自分以外のユーザ情報
     private var users = [User]()
+    private let disposeBag = DisposeBag()
     
     let topControlView = TopControlView()
     let cardView = UIView()
@@ -28,7 +31,8 @@ class HomeViewController: UIViewController {
     //MARK:LifeCycle Method
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupLayout()        
+        setupLayout()
+        setupBindings()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -101,6 +105,15 @@ class HomeViewController: UIViewController {
             print("ログアウト",error)
         }
 
+    }
+    private func setupBindings(){
+        topControlView.profileButton.rx.tap
+            .asDriver()
+            .drive { [weak self] _ in
+                let profile = ProfileViewController()
+                self?.present(profile, animated: true, completion:nil)
+            }
+            .disposed(by: disposeBag)
     }
 
 }
